@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+
+<script type="text/javascript">
+var userName;
+var userId;
+
+function myJavascriptFunction () {
+    
+      alert('objective-c往javaScript传值测试'+'\n'+'userName:'+userName+'\n' + "userId:" +userId);
+    
+  }
+  
+  function setUserInfomation (VarUserName,varUserId) {
+    
+      userName = VarUserName;
+	  userId = varUserId;
+    
+  }
+  
+  
+   function callObjectivecFun1() {
+    
+      window.location.href="objc:doFunc1";
+    
+  }
+  
+  function callObjectivecFun2() {
+    
+      window.location.href="objc:doFunc2"+":"+userName+":"+userId;
+    
+  }
+
+
+</script>
+
+<body>
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<font size="22" face="Verdana">
+<a href="javascript:callObjectivecFun1()">请点我调func1</a>
+</font>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<font size="22" face="Verdana">
+<a href="javascript:callObjectivecFun2()">请点我调func2</a>
+</font>
+
+</body>
+</html>
